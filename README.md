@@ -7,12 +7,12 @@ As someone new to the OpenMAX usage club I very quickly wished "can't someone ju
 
 So I wrote a bit of code which is for use in another app I'm doing, but here's some instructions on how to integrate it into an existing app.
 
-How to make the hello_triangle example read a texture from a JPG with OpenMAX
------------------------------------------------------------------------------
+**How to make the hello_triangle example read a texture from a JPG with OpenMAX**
+
 
 * Duplicate the hello_triangle directory into a hello_triangle_jpeg directory, but leave it in the same hello_pi base folder since it needs to use the shared Makefile. (the hello_triangle example being the one in https://github.com/raspberrypi/firmware/tree/master/opt/vc/src/hello_pi )
 
-* Download the omx_event_and_buffer_handler.c, omx_event_and_buffer_handler.h, omx_image.c and omx_image.h into the hello_triangle_jpeg directory. As a sample image also download the Raspi_Colour_R.jpg into that directory.
+* Download the omx_event_and_buffer_handler.c, omx_event_and_buffer_handler.h, omx_image.c and omx_image.h files from this repository into the hello_triangle_jpeg directory. As a sample image also download the Raspi_Colour_R.jpg into that directory.
 
 * Open the Makefile and change the line:
 
@@ -40,7 +40,7 @@ add
    #include "omx_image.h"
 ```
 
-Inside init_textures change where it loads the first texture from:
+Inside **init_textures** change where it loads the first texture from:
 
 ```C
    glBindTexture(GL_TEXTURE_2D, state->tex[0]);
@@ -61,7 +61,7 @@ to:
    
 * Run make and then ./hello_triangle.bin to see it run.
 
-* The texture will probably be flipped. You can fix this by going into cube_texture_and_coords.h. Find the definition for texCoords and change the first entry from:
+* The texture will probably be flipped. You can fix this by going into **cube_texture_and_coords.h**. Find the definition for **texCoords** and change the first entry from:
 
 ```
    0.f,  0.f,
