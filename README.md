@@ -7,7 +7,8 @@ As someone new to the OpenMAX usage club I very quickly wished "can't someone ju
 
 So I wrote a bit of code which is for use in another app I'm doing, but here's some instructions on how to integrate it into an existing app.
 
-How to make the hello_triangle example read its textures from JPGs with OpenMAX
+How to make the hello_triangle example read a texture from a JPG with OpenMAX
+-----------------------------------------------------------------------------
 
 * Duplicate the hello_triangle directory into a hello_triangle_jpeg directory, but leave it in the same hello_pi base folder since it needs to use the shared Makefile. (the hello_triangle example being the one in https://github.com/raspberrypi/firmware/tree/master/opt/vc/src/hello_pi )
 
