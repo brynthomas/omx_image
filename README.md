@@ -3,7 +3,7 @@ omx_image
 
 An example image loader for OpenMAX on the Raspberry PI
 
-As someone new to the OpenMAX usage club I very quickly wished "can't someone just give a simple example that will load a JPEG into a texture that I can use in my code".
+As someone new to the OpenMAX usage club I very quickly wished "can't someone just give a simple example that will load a JPEG into an OpenGL ES texture that I can use in my code".
 
 So I wrote a bit of code which is for use in another app I'm doing, but here's some instructions on how to integrate it into an existing app.
 
