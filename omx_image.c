@@ -357,7 +357,7 @@ int omx_image_loader (int texture_id, EGLDisplay * i_eglDisplay, EGLContext * i_
   // These are two events which I monitor later on in the program and are generally the source of 
   // timeouts and errors for dud JPGs (and tell me when important stages are finished).
   omx_event_reset_group (1);
-  omx_event_require (OMX_COMP_ID_RESIZER, OMX_EVENT_TYPE_CUSTOM, OMX_EventBufferFlag, resizer_outPort, 1, 1);
+  omx_event_require (OMX_COMP_ID_RESIZER, OMX_EVENT_TYPE_CUSTOM, OMX_EventBufferFlag, resizer_outPort, 17, 1);
   omx_event_reset_group (2);
   omx_event_require (OMX_COMP_ID_DECODER, OMX_EVENT_TYPE_CUSTOM, OMX_EventPortSettingsChanged, decoder_outPort, 0, 2);
 
